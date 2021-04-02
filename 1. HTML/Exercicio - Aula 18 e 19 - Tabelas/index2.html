@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao de tabelas</title>
+</head>
+<body>
+    <h2>Tabelas:</h2>
+    <br>
+    <br>
+    <br>
+    <table border="2" cellspacing="0" cellpadding="10" width="100%" height="">
+        <!-- Tabble row  -->
+        <tr> 
+            <th>Foto</th>
+            <th>Quantidade</th>  <!-- tabble header / parte de cima -->
+            <th>Pais</th>
+            <th>Frete</th>
+            <th>Valor</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/61R46LqpS5L._AC_SX425_.jpg" width="50"></td>
+            <td>15</td> <!-- tabble data / dados da tabela -->
+            <td>BR</td>
+            <td>Gratís</td>
+            <td>22,90</td>
+            <td><a href="https://www.amazon.com.br/Celular-Samsung-Galaxy-Vermelho-Android/dp/B082FZFBMX">Clique aqui</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://veja.abril.com.br/wp-content/uploads/2019/03/tecnologia-samsung-s10-01.jpg" width="50"></td>
+            <td>87</td>
+            <td>USA</td>
+            <td>8,90</td>
+            <td>109,99</td>
+            <td><a href="https://veja.abril.com.br/tecnologia/coreia-do-sul-tem-primeiro-celular-no-mundo-com-acesso-a-rede-5g/">Link</a></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Teste: Tentar fazer uma tabela dentro de outra tabela</h2>
+    <table border="2">
+        <tr>
+            <th>Quantidade</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>
+                <table border="2">
+                    <tr>
+                        <th>Moeda</th>
+                        <th>Tipo</th>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin</td>
+                        <td>Virtual</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <h2>Tabela com colunas ou linhas maiores</h2>
+    <table border="3">
+        <tr>
+            <th>Balde</th>
+            <th>Cor</th>
+            <th>gosto</th>
+            <th>azul</th>
+        </tr>
+        <tr>
+            <td colspan="2">Ola</td>
+            <td colspan="2">oi</td>
+        </tr>
+        <tr>
+            <td rowspan="3">opa</td>
+            <td colspan="3">Exemplo de qualquer coisa</td>
+        </tr>
+        <tr>
+            <td colspan="2">qualquer coisa</td>
+        </tr>
+        <tr>
+            <td>qualquer coisa dnv</td>
+        </tr>
+    </table>
+</body>
+</html>

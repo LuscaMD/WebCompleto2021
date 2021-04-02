@@ -1,0 +1,25 @@
+.conteudo{
+    border: 1px solid blue;
+
+    /* 
+    padding-top: 30px;
+    padding-right: 25px; 
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+             TOP    RIGHT   BOTTOM   LEFT  */
+    padding: 30px   25px    20px     15px;
+    margin:  20px   20px    15px     15px;
+
+    width: 200px;
+}
+
+.conteudo2{
+    border: 1px solid blue;
+
+           /*TOP    RIGHT   BOTTOM   LEFT  */
+    padding: 30px   25px    20px     15px;
+    margin:  10px   10px    10px     10px;
+
+    width: 200px;
+}

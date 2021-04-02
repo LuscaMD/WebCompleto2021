@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }   
+
+        .container{
+            margin: 50px auto;
+            width: 80%;    
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        .card{
+            width:20%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 50px;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        .foto{
+            width: 100%;
+        }
+
+        .titulo{
+            text-align: center;
+            padding: 15px 5px;
+            background: linear-gradient(to right,#0984e3, #6c5ce7);
+            Color: white;
+        }
+
+        .preco{
+            background: linear-gradient(to right, #00a8ff,#0097e6);
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+        }
+
+        .descricao{
+            padding: 15px 20px;
+            text-align: center;
+            font-size:18px;
+        }
+
+        .descricao .comprar{
+            display: block;
+            color: white;
+            text-align: center;
+            background: linear-gradient(to right, #0984e3, #6c5ce7);
+            margin-top: 15px;
+            text-decoration: none;
+            padding: 10px 5px;
+        }
+    </style>
+    <title>Card</title>
+</head>
+<body>
+    <div class="container d-flex">
+        <div>
+            <div class="row">
+                <div class="card">
+                    <img class="foto" src="https://images3.kabum.com.br/produtos/fotos/129013/placa-de-video-asus-nvidia-geforce-tuf-gaming-rtx-3070-o8g-gddr6-90yv0fq6-m0na00_1602080647_gg.jpg">
+                    <div class="titulo">
+                        <h3>Produto 1</h3>
+                    </div>
+                    <div class="preco">
+                        <h3>R$ 150,99</h3>
+                    </div>
+                    <div class="descricao">
+                        <p>
+                            lorem ipsum dolor sit amet, consectet
+                        </p>
+                        <a href="#" class="comprar">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="foto" src="https://images3.kabum.com.br/produtos/fotos/129013/placa-de-video-asus-nvidia-geforce-tuf-gaming-rtx-3070-o8g-gddr6-90yv0fq6-m0na00_1602080647_gg.jpg">
+                    <div class="titulo">
+                        <h3>Produto 2</h3>
+                    </div>
+                    <div class="preco">
+                        <h3>R$ 17.50</h3>
+                    </div>
+                    <div class="descricao">
+                        <p>
+                            lorem ipsum dolor sit amet, consectet
+                        </p>
+                        <a href="#" class="comprar">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="foto" src="https://images3.kabum.com.br/produtos/fotos/129013/placa-de-video-asus-nvidia-geforce-tuf-gaming-rtx-3070-o8g-gddr6-90yv0fq6-m0na00_1602080647_gg.jpg">
+                    <div class="titulo">
+                        <h3>Produto 3</h3>
+                    </div>
+                    <div class="preco">
+                        <h3>R$ 47.80</h3>
+                    </div>
+                    <div class="descricao">
+                        <p>
+                            lorem ipsum dolor sit amet, consectet
+                        </p>
+                        <a href="#" class="comprar">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="foto" src="https://images3.kabum.com.br/produtos/fotos/129013/placa-de-video-asus-nvidia-geforce-tuf-gaming-rtx-3070-o8g-gddr6-90yv0fq6-m0na00_1602080647_gg.jpg">
+                    <div class="titulo">
+                        <h3>Produto 4</h3>
+                    </div>
+                    <div class="preco">
+                        <h3>R$ 734,28</h3>
+                    </div>
+                    <div class="descricao">
+                        <p>
+                            lorem ipsum dolor sit amet, consectet
+                        </p>
+                        <a href="#" class="comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

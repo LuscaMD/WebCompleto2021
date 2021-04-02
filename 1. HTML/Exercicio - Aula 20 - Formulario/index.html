@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <style>
+        textarea{
+            resize:none;
+        }
+    </style>
+
+    <h2>Login</h2>
+    <form action=""> <!-- O action é onde o formulário vai enviar os dados para outra pagina, ex: processar.php -->
+        Login:<br>
+        <input type="text" name="txtUsuario"><br><br>
+        Senha: <br>
+        <input type="password" name="txtSenha"><br><br>
+        <input type="submit" value="Logar"> <!-- o button é apenas de apertar, caso queira q o site envie deve usar o "submit" -->
+    </form>
+
+    <hr>
+
+    <h2>Cadastre-se</h2>
+    <form>
+        Nome:<br>
+        <input type="text" name="txtNome"><br><br>
+        Email:<br>
+        <input type="email" name="txtEmail"><br><br>
+        Senha:<br>
+        <input type="password" name="SenhaCadastro"><br><br>
+        Sexo:<br>
+        <input type="radio" name="sexo" value="F">Feminino <br>
+        <input type="radio" name="sexo" value="M">Masculino <br>
+        <input type="radio" name="sexo" value="O">Outro <br><br>
+
+        Interesses:<br>
+        <input type="checkbox" name="interesses">Receber ofertas exclusivas<br>
+        <input type="checkbox" name="interesses">Cursos<br>
+        <input type="checkbox" name="interesses">Novidades
+        <br><br>
+
+        Estado:<br>
+        <select name="estado">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="rs">RS</option>
+            <option value="ba">BA</option>
+        </select>
+        <br><br>
+
+        Observações:<br>
+        <textarea name="observacoes" value="obs" rows="4" cols="30" maxlength="50"></textarea>
+        <br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>
