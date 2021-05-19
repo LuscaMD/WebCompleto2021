@@ -1,0 +1,17 @@
+#principal{
+    border: 5px solid red;
+    background-color: green;
+}
+
+.conteudo{
+    background: blue;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: right;
+}
+
+.clear{
+    clear: both;    
+}
