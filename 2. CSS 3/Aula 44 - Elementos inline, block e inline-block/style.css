@@ -1,0 +1,14 @@
+.inline{
+    border: 1px solid blue;
+    display: inline;
+}
+
+.block{
+    border: 1px solid green;
+    display: block;
+}
+
+.inlineblock{
+    border: 1px solid red;
+    display: inline-block;
+}
