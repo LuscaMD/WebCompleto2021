@@ -1,0 +1,25 @@
+a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Links no formato padrão */
+a:link{
+    color: red;
+}
+
+/* Mudar o estilo do link depois que você já visitou */
+a:visited{
+    color:green;
+}
+
+/* Links quando você passa o mouse em cima */
+a:hover{
+    background: yellow;
+}
+
+/* Mudar o estilo quando você está clicando nele */
+a:active{
+    color: purple;
+}
+
