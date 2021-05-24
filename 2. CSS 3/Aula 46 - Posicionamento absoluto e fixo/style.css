@@ -1,0 +1,35 @@
+body{
+    background: #007fc7;
+}
+
+#container{
+    background: #FFF;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+h1{
+    
+}
+
+p{
+    
+    width: 300px;
+}
+
+.absolute{
+    border: 2px solid red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: yellow;
+}
+
+.fixed{
+    border: 2px solid red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: green;
+}
