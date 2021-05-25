@@ -2,8 +2,8 @@
 
 <!-- Mudar de acordo com o projeto -->
 <p align="center">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/LuscaMD/AutoTextWriting.svg">
-  <img alt="GitHub" src="https://img.shields.io/github/license/LuscaMD/AutoTextWriting.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/LuscaMD/WebCompleto2021.svg">
+  <img alt="GitHub" src="https://img.shields.io/github/license/LuscaMD/WebCompleto2021.svg">
 </p>
 
 <!-- Descrição -->
@@ -31,7 +31,7 @@
 ## 🚀 Cursos
 
 - HTML5 ✅
-- CSS 
+- CSS ✅
 - CSS Intermediário & avançado
 - HTML5 e CSS3 - Recursos especiais
 - Bootstrap 4 & Design responsivo
