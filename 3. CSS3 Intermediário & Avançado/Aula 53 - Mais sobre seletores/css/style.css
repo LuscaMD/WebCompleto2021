@@ -1,0 +1,66 @@
+/* Seletor universal // É aplicado em tudo 
+*{
+    border: 1px solid blue;
+}
+*/
+
+/* Seletor de texto 
+h1, h2, h3{
+    color: green;
+}
+*/
+
+/* Seletor de classe */
+.verde{
+    /*  Seleciona qualquer elemento que possui classe "verde" */
+    color: green;
+}
+
+p.verde{
+    /* Aplica somente a elementos <p> que possuem classe "verde" */
+    color: green;
+}
+
+
+/* Seletor de texto */
+h1, h2, h3{
+    color: green;
+}
+
+
+/* Seletor de ID */
+#testandoID{
+    background: blue;
+}
+
+
+/* Seletor de Filhos */
+/* Seleciona um elemento que é filho do outro */
+li > a{
+    background: purple;
+}
+
+
+/* Seletor de descendente */
+/* Aplica a formatação a todos os elementos que são descendentes do outro */
+p span{
+    background: yellow;
+}
+
+
+/* Seletor de irmão adjacente */
+/* Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> */
+h1+p{
+    padding: 15px;
+    background: red;
+    border-radius: 5px;
+}
+
+
+/* Seletor de irmão adjacente */
+/* se houvesse mais de um elemento <p> depois de <h1>, o efeito seria aplicado */
+h1~p{
+    padding: 15px;
+    background: grey;
+    border-radius: 5px;
+}
