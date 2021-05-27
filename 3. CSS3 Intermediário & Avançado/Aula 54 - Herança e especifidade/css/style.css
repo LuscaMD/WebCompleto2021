@@ -1,0 +1,30 @@
+*{
+    color: red;
+}
+
+/* Se um seletor for mais especifico que o outro, ele vai se sobrepor */
+h2{
+    color: grey;
+}
+
+h2.verde{
+    color: green;
+}
+
+h2#verde{
+    color: rgb(98, 252, 137);
+}
+
+
+body{
+    border: 1px solid blue;
+}
+ 
+p{
+    color: rgb(165, 133, 30) !important;
+}
+
+p{
+    color: purple;
+}
+
