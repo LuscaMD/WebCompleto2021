@@ -1,0 +1,35 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: #f7b600 url(../imagens/menu.png) no-repeat;
+    color: black;   
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+}
+
+ul a:hover{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+li{
+    text-align: left center;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#contato #navegacao .contato a,
+#faq #navegacao .faq a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
