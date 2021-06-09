@@ -1,0 +1,16 @@
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.caixa{
+    width: 400px;
+    background: #dedede url(../imagens/topo.png) no-repeat left top;
+}
+.caixa h2{
+    padding: 10px 20px 0px 20px;
+}
+
+.caixa p{
+    padding: 10px 20px 10px 20px;
+    background: #dedede url(../imagens/baixo.png) no-repeat left bottom;
+}
