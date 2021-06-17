@@ -11,7 +11,6 @@ body{
 #container{
     width: 750px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 #topo{
@@ -132,4 +131,39 @@ h2{
     background: #fff;
     padding: 5px;
     margin-top: 5px;
+}
+
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3; 
+}
+
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    font-size: 0.9em;
+    background: #fff;
+    padding: 5px;
+    width: 125px;
+}
+
+input.submit{
+    color: #fff;
+    background: #b10333;
+    border: 2px solid #870529;
+    width: 80px;
 }
