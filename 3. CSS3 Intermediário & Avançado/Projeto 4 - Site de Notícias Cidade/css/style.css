@@ -10,7 +10,7 @@ body{
 
 #container{
     width: 750px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 #topo{
@@ -27,6 +27,16 @@ ul{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+a:link, a:visited{
+    color: #b10333;
+    padding: 2px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: purple;
 }
 
 #topo ul{
@@ -79,12 +89,6 @@ body.fotos #navegacao a#fotos{
     margin: 0 0 20px -750px;
 }
 
-#tres-colunas #primario{
-    width: 270px;
-    float: left;
-    margin: 0 0 20px 195px;
-}
-
 #duas-colunas #primario{
     width: 555px;
     float: left;
@@ -95,6 +99,12 @@ body.fotos #navegacao a#fotos{
     width: 750px;
     float: left;
     margin: 0 0 20px 0;
+}
+
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
 }
 
 #secundario{
@@ -166,4 +176,58 @@ input.submit{
     background: #b10333;
     border: 2px solid #870529;
     width: 80px;
+}
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+h3.destaque{
+    background: red;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+h3.ultima-entrevista{
+    background: red;
+    color: black;
+}
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px; 
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+}
+
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+    font-size: 0.7em;
+    color: black;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
 }
