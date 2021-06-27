@@ -8,7 +8,7 @@
 
 <!-- Descrição -->
 <p>
-    Esse repositório foi feito com o intuito de armazenar, acompanhar minha evolução e deixar registrado os códigos escritos durante as aulas do curso <a href="https://www.udemy.com/course/web-completo/">Desenvolvimento Web Completo</a>.
+    Esse repositório foi feito com o intuito de armazenar, acompanhar minha evolução e deixar registrado os códigos desenvolvidos durante as aulas do curso <a href="https://www.udemy.com/course/web-completo/">Desenvolvimento Web Completo</a>.
 </p>
 <br>
 
@@ -32,8 +32,8 @@
 
 - HTML5 ✅
 - CSS ✅
-- CSS Intermediário & avançado
-- HTML5 e CSS3 - Recursos especiais
+- CSS Intermediário & avançado ✅
+- HTML5 e CSS3 - Recursos especiais 🟡
 - Bootstrap 4 & Design responsivo
 - Java Script
 - JavaScript Moderno (ECMAScript 2015 - ES6) e Orientação a Objetos
