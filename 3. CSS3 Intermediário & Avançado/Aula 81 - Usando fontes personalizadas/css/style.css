@@ -1,0 +1,34 @@
+p{
+    width: 60%;
+    text-align: justify center;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 35px;
+}
+
+@font-face{
+    font-family: "Ancient-Medium";
+    src: url("../fonts/Ancient-Medium.woff");
+}
+
+@font-face{
+    font-family: "BringHeart";
+    src: url("../fonts/BringHeart.woff");
+}
+
+@font-face{
+    font-family: "MadelinaScript";
+    src: url("../fonts/MadelinaScript.woff");
+}
+
+#font1{
+    font-family: "Ancient-Medium";
+}
+
+#font2{
+    font-family: "BringHeart";
+}
+
+#font3{
+    font-family: "MadelinaScript";
+}
