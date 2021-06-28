@@ -1,0 +1,26 @@
+body{
+    /* pode mudar o "to right" para 50deg por exemplo, para ficar com um angulo de 50 graus */
+    background: linear-gradient(to right,#caf0f8,#0077b6);
+}
+
+p{
+    color: white;
+}
+
+#caixa{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background: url("../imagens/camera.png");
+}
+
+#caixa2{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(yellow, green);
+}
+
+#caixa h1{
+    background: rgba(125,25,55,0.8)
+}
