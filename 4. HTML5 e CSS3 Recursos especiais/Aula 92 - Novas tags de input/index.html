@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGS INPUT</title>
+    <!-- Css personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <form>
+        <!-- Text -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required autofocus>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <!-- Number -->
+        <label for="numero">Numero:</label>
+        <input type="number" name="numero" min="1" max="10" required>
+        <br><br>
+
+        <!-- URL -->
+        <label for="url">Url:</label>
+        <input type="url" placeholder="https://www.google.com" required>
+        <br><br>
+
+        <!-- Pesquisa -->
+        <label for="pesquisa">Pesquisa:</label>
+        <input type="search" name="pesquisa" required>
+        <br><br>
+
+        <!-- Range -->
+        <label for="range">Range:</label>
+        <input type="range" name="range" min="1" max="5"required>
+        <br><br>
+        
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" name="date" required>
+        <br><br>
+
+        <!-- Date -->
+        <label for="color">Cor:</label>
+        <input type="color" name="color" required>
+        <br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
