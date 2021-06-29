@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo{
+    background: blue;
+    height: 400px;
+    width: 100%;
+    display: flex;
+
+    /* row, row-reverse, column, column-reverse 
+    flex-direction: row;*/
+
+    /* nowrap, wrap, wrap-reverse */
+    flex-wrap: wrap;
+
+    /* flex-start, flex-end, center, space-between, space-around
+    justify-content: space-around;*/
+
+    /* stretch, center, flex-start, flex-end, baseline
+    align-items: center; */
+}
+
+.item{
+    background: rgb(0, 247, 255);
+    border: 1px solid green;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    /* Define a proporção do espaço utilizado pelo item, 0 = desativado, 1 ou mais = ativado (vai ocupar tentar ocupar 100%) */
+    flex-grow: 1;
+
+    /*Define a proporção do espaço que ele vai encolher, 0 = desativado, 1 ou mais = ativado (vai encolher conforme o numero colocado, quanto maior, mais ele diminui) */
+    flex-shrink: 1;
+
+    /* define o tamanho do item antes da width */
+    flex-basis: 100px;
+}
+
+/*
+.ordem1{
+    order: 1;
+}
+
+.ordem2{
+    order: 2;
+}
+
+.ordem3{
+    order: 3;
+}
+*/
+
+
