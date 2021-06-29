@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: yellow;
+}
+
+nav{
+    background: green;
+}
+
+footer{
+    background: rgb(0, 174, 255);
+}
