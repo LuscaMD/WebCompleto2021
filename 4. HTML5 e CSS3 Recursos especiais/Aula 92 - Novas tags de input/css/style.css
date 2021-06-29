@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(74, 255, 171);
+}
+
+form{
+    margin: 100px;
+    border: 1px solid black;
+}
