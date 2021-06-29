@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: yellow;
+}
+
+nav{
+    background: green;
+}
+
+footer{
+    background: rgb(0, 174, 255);
+}
+
+section{
+    background: purple;
+    border: 1px dotted black;
+    margin: 10px;
+}
+
+aside{
+    background: gray;
+}
