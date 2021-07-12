@@ -1,0 +1,34 @@
+.div{
+    height: 100px;
+    width:100px;
+    background: blue;
+    cursor: pointer;
+}
+
+.div2{
+    height: 100px;
+    width:100px;
+    background: green;
+    cursor: pointer;
+}
+
+.div3{
+    height: 100px;
+    width:100px;
+    background: yellow;
+    cursor: pointer;
+}
+
+.div4{
+    height: 100px;
+    width:100px;
+    background: purple;
+    cursor: pointer;
+}
+
+.div5{
+    height: 100px;
+    width:100px;
+    background: red;
+    cursor: pointer;
+}
