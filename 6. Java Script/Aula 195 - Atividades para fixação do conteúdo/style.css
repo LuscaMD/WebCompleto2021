@@ -1,0 +1,21 @@
+input{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.vazio{
+    background: white;
+}
+
+.focado{
+    background: yellow;
+}
+
+.backgroundVermelho{
+    background: red;
+}
+
+.backgroundVerde{
+    background: green;
+}
