@@ -35,8 +35,8 @@
 - CSS3 Intermediário & avançado ✅
 - HTML5 e CSS3 - Recursos especiais ✅
 - Bootstrap 4 & Design responsivo
-- Java Script 🟡
-- JavaScript Moderno (ECMAScript 2015 - ES6) e Orientação a Objetos
+- JavaScript ✅
+- JavaScript Moderno (ECMAScript 2015 - ES6) e Orientação a Objetos 🟡
 - PHP 7
 - PHP 7 e Orientação a Objetos
 - Banco de dados MySQL
