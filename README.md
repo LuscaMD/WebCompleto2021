@@ -36,8 +36,9 @@
 - HTML5 e CSS3 - Recursos especiais ✅
 - Bootstrap 4 & Design responsivo
 - JavaScript ✅
-- JavaScript Moderno (ECMAScript 2015 - ES6) e Orientação a Objetos 🟡
-- PHP 7
+- JavaScript Moderno (ECMAScript 2015 - ES6) e Orientação a Objetos ✅
+- Iniciando com servidor Apache, PHP e MySQL 🟡
+- PHP 7 
 - PHP 7 e Orientação a Objetos
 - Banco de dados MySQL
 - Ajax
