@@ -35,23 +35,76 @@ class Bd{
         }
     }
 
-
     getProximoId(){
         let proximoId = localStorage.getItem('id');
 
         return parseInt(proximoId) + 1;
     }
 
-    
-
     gravar(d){
-        //                      ID       Dado a ser salvo
-        //                              transforma o objeto literal para uma notação JSON
-        
         let id = this.getProximoId();
         
+        //                   ID     Dado a ser salvo
         localStorage.setItem(id, JSON.stringify(d));
+        //                      transforma o objeto literal para uma notação JSON
         localStorage.setItem('id', id)
+    }
+
+    recuperarTodosRegistros(){
+        let id = localStorage.getItem('id');
+
+        let arrayDespesas = []
+
+        for(let i = 1; i <= id; i++){
+
+            let despesa = JSON.parse(localStorage.getItem(i));
+            
+            if(despesa === null){
+                // pula uma vez
+                continue;
+            }
+
+            despesa.id = i;
+            arrayDespesas.push(despesa);
+        }
+
+        return arrayDespesas
+    }
+
+    pesquisar(despesa){
+        let despesasFiltradas = Array()
+        
+        despesasFiltradas = this.recuperarTodosRegistros(despesa)
+
+        if(despesa.ano != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano);
+        }
+
+        if(despesa.mes != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.mes == despesa.mes);
+        }
+
+        if(despesa.dia != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.dia);
+        }
+
+        if(despesa.tipo != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.tipo);
+        }
+
+        if(despesa.descricao != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.descricao);
+        }
+
+        if(despesa.valor != ''){
+            despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor);
+        }
+
+        return despesasFiltradas
+    }
+
+    remover(id){
+        localStorage.removeItem(id)
     }
 }
 
@@ -81,7 +134,6 @@ function cadastrarDespesa(){
         bd.gravar(despesa)
 
         // dialogo de sucesso
-        
         document.getElementById('modalTitulo').className = "modal-title text-success";
         document.getElementById('modalTitulo').innerHTML = "Registro inserido com sucesso!";
         
@@ -91,6 +143,14 @@ function cadastrarDespesa(){
         document.getElementById('btnVoltar').innerHTML = 'Voltar';
         
         $('#modalAviso').modal('show')
+
+        ano.value = "";
+        mes.selectedIndex = "";
+        dia.value = "";
+        tipo.value = "";
+        descricao.value = "";
+        valor.value = "";
+
     }
     else{
         
@@ -107,6 +167,95 @@ function cadastrarDespesa(){
     }
 }
 
+
+function carregaListaDespesas(despesas = Array(), filto = false){
+
+    if(despesas.length == 0 && filto == false){
+
+        despesas = bd.recuperarTodosRegistros();
+    }
+
+    //  console.log(despesas)
+
+    let listaDespesas = document.getElementById('listaDespesas');
+    listaDespesas.innerHTML = "";
+
+    despesas.forEach(function(d){
+
+        console.log(d)
+
+        // criando linhas (tr)
+        let linha = listaDespesas.insertRow()
+
+        // criando linhas (td)
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}` ;
+
+        switch(d.tipo){
+            case '1':
+                d.tipo = "Alimentação";
+                break
+
+            case '2':
+                d.tipo = "Educação";
+                break
+
+            case '3':
+                d.tipo = "Lazer";
+                break
+
+            case '4':
+                d.tipo = "Saúde";
+                break
+
+            case '5':
+                d.tipo = "Transporte";
+                break
+        }
+        linha.insertCell(1).innerHTML = d.tipo;
+        linha.insertCell(2).innerHTML = d.descricao;
+        linha.insertCell(3).innerHTML = d.valor;
+    
+        let btnExcluir = document.createElement("button")
+        btnExcluir.className = "btn btn-danger";
+        btnExcluir.innerHTML = "<i class='fas fa-times'></i>";
+        btnExcluir.id = `id_despesa_${d.id}`;
+        btnExcluir.onclick = function(){
+
+            let id = this.id.replace('id_despesa_','');
+            
+            bd.remover(id);
+
+            window.location.reload();
+        }
+
+        linha.insertCell(4).append(btnExcluir);
+    });
+
+
+    /*
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>*/
+}
+
+function pesquisarDespesa(){
+    
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    let despesa = new Despesa(ano,mes,dia,tipo,descricao,valor)
+
+    let despesas = bd.pesquisar(despesa)
+
+    carregaListaDespesas(despesas, true)
+}
 
 /* 
 
